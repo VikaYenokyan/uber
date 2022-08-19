@@ -9,6 +9,9 @@ $color2: #ff5656;
   nav {
     height: 50px;
     background-color: #212121;
+    position: fixed; /* * */
+    width: 100%; /* * */
+    z-index: 2;
   }
   
   header {
@@ -41,6 +44,7 @@ $color2: #ff5656;
   
   .subheader {
     position: absolute;
+    top: 50px;
     width: 100%;
     height: 84px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -176,6 +180,7 @@ $color2: #ff5656;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    line-height: 27px;
   }
   
   .subtitle {
@@ -276,5 +281,31 @@ $color2: #ff5656;
             border-radius: 100%;
             cursor: pointer;
         }
+    }
+  }
+  .choice {
+    min-height: 896px;
+    padding: 57px 0 138px 0;
+    background: url('../img/bg/choice.jpg') center (center / cover) no-repeat;
+    .label {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .title, .subtitle {
+      color: #fff;
+    }
+    .choice_car {
+      display: block;
+      margin: 56px auto 0 auto;
+    }
+    .choice_text {
+      display: flex;
+      text-align: center;
+      margin: 4px auto 0 auto;
+      width: 297px;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.41;
+      color: #222;
     }
   }
