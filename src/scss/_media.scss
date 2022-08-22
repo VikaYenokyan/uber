@@ -264,6 +264,9 @@
             height: 22px;
             font-size: 10px;
             margin-top: 6px;
+            &:hover {
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+            }
         }
     }
     .promo {
@@ -287,10 +290,21 @@
             width: 210px;
             height: 50px;
             margin-top: 72px;
+            &:hover {
+				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+            }
         }
     }
     .menu {
         width: 85%;
+        &_item {
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        &_link {
+            display: block;
+        }
     }
     .reasons {
         padding: 22px 0 36px 0;
